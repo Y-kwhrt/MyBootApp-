@@ -52,11 +52,10 @@ public class BookService {
 		Optional<BookBean> opt = bookRepository.findById(id);
 		opt.ifPresent(book ->{
 			
-			
-			BeanUtils.copyProperties(opt, bookForm);
+			BeanUtils.copyProperties(book,bookForm);
 			
 		});
-		
+	
 		return bookForm;
 	}
 }
