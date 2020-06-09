@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.myapp9;
+package jp.te4a.spring.boot.myapp10;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +53,7 @@ public class BookService {
 		opt.ifPresent(book ->{
 			
 			
-			BeanUtils.copyProperties(opt, bookForm);
+			BeanUtils.copyProperties(book, bookForm);
 			
 		});
 		
