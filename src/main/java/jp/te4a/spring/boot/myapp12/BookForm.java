@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 		@Size(min=3)
 		private String title;
 		@Size(min=3,max=20)
+		@Writter(ok="常盤金成")
 		private String writter;
 		private String publisher;
 		@Min(0)
